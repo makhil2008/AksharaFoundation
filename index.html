@@ -30,9 +30,17 @@
 
 		<!-- Lightbox2 JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script> -->
+		
 	</head>
 	<body class="is-preload">
-
+		<!-- <div class="popup" id="birthdayPopup">
+			<h1>🎉 Happy Birthday Dad! 🎂</h1>
+		</div>
+		<canvas id="confettiCanvas"></canvas>
+		 -->
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
@@ -117,7 +125,7 @@
 							<section >
 								<h3>Educational Programs</h3>
 									<p><span class="image right"><img src="images/main/students_test.jpeg" alt="" /></span>Akshara Foundation’s educational initiatives are dedicated to empowering individuals in the Avanigadda through practical learning, skills development, and community-based training. From workshops and academic support to vocational training and awareness sessions, these programs are designed to uplift students, youth, and lifelong learners alike. Held at the Aatmiya Kalayika facility and other local venues, the Foundation ensures that education is accessible, inclusive, and deeply rooted in the needs of the community.</p>
-								<a href="aatmiya_kalayika_en.html" class="button primary">Learn More about Educational Programs</a></p>
+								<a href="educational_programs_en.html" class="button primary">Learn More about Educational Programs</a></p>
 							</section>
 
 						<!-- Posts -->
@@ -352,5 +360,28 @@
 			});
 			});
 		</script>
+		
+		<!-- <script>
+  			// Wait for the DOM to load
+			window.addEventListener('load', () => {
+				const canvas = document.getElementById('confettiCanvas');
+				// Make the canvas full-screen
+				canvas.width = window.innerWidth;
+				canvas.height = window.innerHeight;
+
+				// Create the confetti instance
+				const myConfetti = confetti.create(canvas, {
+				resize: true,
+				useWorker: true
+				});
+
+				// Fire the confetti
+				myConfetti({
+				particleCount: 150,
+				spread: 120,
+				origin: { y: 0.6 }
+				});
+			});
+			</script> -->
 	</body>
 </html>
